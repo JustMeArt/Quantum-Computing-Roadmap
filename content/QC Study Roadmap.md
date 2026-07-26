@@ -3,14 +3,6 @@
 
 Map of Content for a self-directed quantum computing curriculum, built up from lecture material, hands-on labs, and other resources along the way. Central hub — everything links back here.
 
-## Progress
-
-- [x] Core primitives, first circuit, transpile/execute/post-process, statevectors, QSphere visualization
-- [x] Gates & entanglement, circuit depth, GHZ states, transpilation, heavy-hex topology
-- [x] Backend properties & coupling maps, layout, SWAP/routing overhead, toy noise models (depolarizing, Pauli, thermal relaxation), density matrices, dynamic circuits (mid-circuit measurement + feedforward) for connectivity-free GHZ, running on real IBM hardware
-- [x] Error suppression/mitigation with Samplomatic, NoiseLearnerV3, PNA, PEC, and SLC for per-layer noise control
-- [x] Quantum advantage criteria and the Advantage Tracker, QAOA on the partition problem with Pauli Correlation Encoding and M3/ZNE mitigation, SQD on N₂ with LUCJ/CCSD state prep and Heron-vs-Nighthawk hardware mapping
-
 ## Concept Map
 
 ### Absolute Basics
