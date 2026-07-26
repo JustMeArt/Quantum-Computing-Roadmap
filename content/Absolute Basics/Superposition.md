@@ -1,3 +1,7 @@
+---
+order: 3
+---
+
 # Superposition
 #qc/basics #qc/math
 

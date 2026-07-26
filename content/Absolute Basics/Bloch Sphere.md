@@ -1,3 +1,7 @@
+---
+order: 4
+---
+
 # Bloch Sphere
 #qc/basics #qc/math
 

@@ -1,3 +1,7 @@
+---
+order: 2
+---
+
 # What is a Qubit?
 #qc/basics #qc/math
 
