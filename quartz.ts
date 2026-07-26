@@ -17,6 +17,34 @@ const orderAwareSort: SortFn = (f1, f2) => {
 }
 componentRegistry.setOptionOverrides("@quartz-community/folder-page", { sort: orderAwareSort })
 
+// The sidebar Explorer tree is a separate component with its own independent
+// sort — same `order` frontmatter field, mirroring the Explorer plugin's own
+// default fallback (folders first, then numeric-aware alphabetical) exactly.
+interface ExplorerNode {
+  isFolder: boolean
+  displayName?: string
+  data: Record<string, unknown> | null
+}
+const explorerSortFn = (a: ExplorerNode, b: ExplorerNode): number => {
+  const aOrder = (a.data?.frontmatter as Record<string, unknown> | undefined)?.order as
+    | number
+    | undefined
+  const bOrder = (b.data?.frontmatter as Record<string, unknown> | undefined)?.order as
+    | number
+    | undefined
+  if (!a.isFolder && !b.isFolder && typeof aOrder === "number" && typeof bOrder === "number") {
+    return aOrder - bOrder
+  }
+  if ((!a.isFolder && !b.isFolder) || (a.isFolder && b.isFolder)) {
+    return (a.displayName || "").localeCompare(b.displayName || "", undefined, {
+      numeric: true,
+      sensitivity: "base",
+    })
+  }
+  return !a.isFolder && b.isFolder ? 1 : -1
+}
+componentRegistry.setOptionOverrides("@quartz-community/explorer", { sortFn: explorerSortFn })
+
 const config = await loadQuartzConfig()
 export default config
 export const layout = await loadQuartzLayout()
