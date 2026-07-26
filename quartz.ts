@@ -17,21 +17,20 @@ const orderAwareSort: SortFn = (f1, f2) => {
 }
 componentRegistry.setOptionOverrides("@quartz-community/folder-page", { sort: orderAwareSort })
 
-// The sidebar Explorer tree is a separate component with its own independent
-// sort — same `order` frontmatter field, mirroring the Explorer plugin's own
-// default fallback (folders first, then numeric-aware alphabetical) exactly.
+// The sidebar Explorer tree is a separate, client-side component that reads
+// from the built contentIndex.json at runtime — a fixed, flat schema
+// (slug/filePath/title/links/tags/content/date/description) with no
+// `frontmatter` passthrough, so it can't see the `order` field above at all.
+// scripts/inject-order.mjs patches an `order` field onto that JSON directly
+// after build (see package.json's postbuild script), which is what this reads.
 interface ExplorerNode {
   isFolder: boolean
   displayName?: string
   data: Record<string, unknown> | null
 }
 const explorerSortFn = (a: ExplorerNode, b: ExplorerNode): number => {
-  const aOrder = (a.data?.frontmatter as Record<string, unknown> | undefined)?.order as
-    | number
-    | undefined
-  const bOrder = (b.data?.frontmatter as Record<string, unknown> | undefined)?.order as
-    | number
-    | undefined
+  const aOrder = a.data?.order as number | undefined
+  const bOrder = b.data?.order as number | undefined
   if (!a.isFolder && !b.isFolder && typeof aOrder === "number" && typeof bOrder === "number") {
     return aOrder - bOrder
   }

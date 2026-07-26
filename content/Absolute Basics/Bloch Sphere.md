@@ -1,5 +1,6 @@
 ---
 order: 4
+modified: 2026-01-04
 ---
 
 # Bloch Sphere

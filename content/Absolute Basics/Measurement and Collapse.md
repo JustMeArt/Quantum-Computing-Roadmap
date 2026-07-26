@@ -1,5 +1,6 @@
 ---
 order: 5
+modified: 2026-01-05
 ---
 
 # Measurement and Collapse
