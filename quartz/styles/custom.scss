@@ -2,6 +2,13 @@
 
 // put your custom CSS here!
 
+// drop the pill background on wikilinks so the accent color reads as a
+// distinct link color instead of a muted highlight box
+a.internal {
+  background-color: transparent;
+  padding: 0;
+}
+
 .blackhole-mark {
   float: right;
   margin: 0 0 0.5rem 1rem;
