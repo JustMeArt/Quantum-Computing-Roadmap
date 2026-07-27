@@ -2,6 +2,38 @@
 
 // put your custom CSS here!
 
+// the bundled @quartz-themes/core "obsidian-theme-overrides" resource
+// (resource-style-*.css) redeclares every theme variable chained through
+// Obsidian-compat var names (e.g. --secondary: var(--text-accent, ...)),
+// which circularly references our own mapping in the other direction and
+// breaks resolution — falling back to that package's hardcoded defaults
+// (a gold highlight, a random violet accent) in a higher-priority CSS
+// layer than ours. !important beats any non-important rule regardless of
+// layer, so reassert our real palette here rather than fighting layers.
+:root {
+  --light: #f4f4f2 !important;
+  --lightgray: #e0e0de !important;
+  --gray: #9a9a9c !important;
+  --darkgray: #5a5a5c !important;
+  --dark: #1c1c1e !important;
+  --secondary: #1a5fa8 !important;
+  --tertiary: #0d4a8a !important;
+  --highlight: rgba(143, 159, 169, 0.15) !important;
+  --textHighlight: #fff23688 !important;
+}
+
+:root[saved-theme="dark"] {
+  --light: #1c1c1e !important;
+  --lightgray: #2e2e30 !important;
+  --gray: #6a6a6c !important;
+  --darkgray: #d8d8d8 !important;
+  --dark: #f0f0ef !important;
+  --secondary: #8fc8ff !important;
+  --tertiary: #5fa8e0 !important;
+  --highlight: rgba(143, 159, 169, 0.15) !important;
+  --textHighlight: #b3aa0288 !important;
+}
+
 // drop the pill background on wikilinks so the accent color reads as a
 // distinct link color instead of a muted highlight box
 a.internal {
