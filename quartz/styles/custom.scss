@@ -35,10 +35,13 @@
 }
 
 // drop the pill background on wikilinks so the accent color reads as a
-// distinct link color instead of a muted highlight box
-a.internal {
-  background-color: transparent;
-  padding: 0;
+// distinct link color instead of a muted highlight box. !important because
+// the same obsidian-theme-overrides resource also ships a higher-specificity
+// `body a.internal-link { background-color: ... }` rule that otherwise wins.
+a.internal,
+a.internal-link {
+  background-color: transparent !important;
+  padding: 0 !important;
 }
 
 .blackhole-mark {
