@@ -8,7 +8,7 @@ configuration:
     provider: goatcounter
     websiteId: justcallmeart
   locale: en-US
-  baseUrl: justmeart.github.io/Quantum-Computing-Roadmap
+  baseUrl: qcroadmap.com
   ignorePatterns:
     - private
     - templates
