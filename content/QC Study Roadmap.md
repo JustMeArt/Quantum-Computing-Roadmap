@@ -1,6 +1,30 @@
 # QC Study Roadmap
 #qc/moc
 
+<pre class="blackhole-mark">  ...
+    .:.
+      .:.
+        .::.
+          .:*.
+            .*#:.                               ..
+              .##*:.                        .:::*#*.
+                :###*::..         .......:**#*.:*:::
+                 .###*:...::::::**############:.#.::
+                  :#:..*####**::**###*::#####*..:.:.
+                   ..:###*..      ...  *####:..:..
+                    :*##:            .:####:.:..
+                   .*##:             .###:..:.
+                   ::##:             :#*::.:
+                  .::###.          .*#:.:#.
+                  ::###*...     .:*#*:.....
+                 ::*###. ..:::*##*:.... .*:
+               ..:#####*#####*:.. .....:##*
+             ...*:*####**::.  ..... .::**##*.
+           ...:.::::::::.......          ..*#:
+           *..*:::.........                 .:..
+           .::....                             ...
+                                                  ..</pre>
+
 Map of Content for a self-directed quantum computing curriculum, built up from lecture material, hands-on labs, and other resources along the way. Central hub — everything links back here.
 
 ## Concept Map

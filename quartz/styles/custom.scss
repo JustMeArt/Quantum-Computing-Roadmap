@@ -1,3 +1,19 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+
+.blackhole-mark {
+  float: right;
+  margin: 0 0 0.5rem 1rem;
+  font-family: var(--codeFont);
+  font-size: 4px;
+  line-height: 4.5px;
+  color: var(--secondary);
+  opacity: 0.85;
+  white-space: pre;
+  user-select: none;
+
+  @media #{$mobile} {
+    display: none;
+  }
+}
