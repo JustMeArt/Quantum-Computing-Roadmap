@@ -1,5 +1,6 @@
 ---
-title: QC Study Notes
+title: QC Roadmap
+description: A self-directed quantum computing curriculum — gates and entanglement through algorithms, error mitigation, and quantum advantage.
 ---
 
 <pre class="blackhole-mark">  ...

@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: QC Study Notes
+  pageTitle: QC Roadmap
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
