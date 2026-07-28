@@ -5,7 +5,7 @@ Translating [[The Quantum Algorithm Zoo|complexity-class speedups]] into actual 
 
 - **Simulating nature** — spin models, materials science, quantum chemistry, high-energy physics. The founding motivation for the whole field: *"Nature isn't classical, dammit, and if you want to make a simulation of nature, you'd better make it quantum mechanical"* (Feynman, 1981). This is the domain the whole [[Hamiltonian Simulation — Why It's Hard|Quantum Algorithms section]], [[1D Ising Chain and the Mirror Trick|this vault's own Ising-chain benchmark]], and the Error Mitigation section's toolchain are all built around.
 - **Mathematics and data with structure** — factoring, the Abelian hidden subgroup problem, supervised/unsupervised learning, time series, regression, linear algebra. "Structure" is the operative word — see [[Quantum Speedup — Ingredients and Myths]] for why unstructured problems don't get the same benefit.
-- **Search and optimization** — combinatorial optimization, black-box optimization, general mixed-integer programming.
+- **Search and optimization** — combinatorial optimization, black-box optimization, general mixed-integer programming. Unlike the two domains above, this one is heuristic today, not proven: algorithms like [[QAOA — Quantum Approximate Optimization Algorithm|QAOA]] have no proven speedup over classical solvers (see [[The Quantum Algorithm Zoo]]).
 
 ## Named industry applications
 
