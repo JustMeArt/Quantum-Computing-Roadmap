@@ -1,0 +1,135 @@
+{
+  "collapse-filter": true,
+  "search": "",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:\"Absolute Basics\"",
+      "color": {
+        "a": 1,
+        "rgb": 3355443
+      }
+    },
+    {
+      "query": "path:\"Programming a Quantum Computer\"",
+      "color": {
+        "a": 1,
+        "rgb": 8947848
+      }
+    },
+    {
+      "query": "path:\"Foundations\"",
+      "color": {
+        "a": 1,
+        "rgb": 5222598
+      }
+    },
+    {
+      "query": "path:\"Why Quantum Computing Matters\"",
+      "color": {
+        "a": 1,
+        "rgb": 16748838
+      }
+    },
+    {
+      "query": "path:\"Entangled States\"",
+      "color": {
+        "a": 1,
+        "rgb": 10186710
+      }
+    },
+    {
+      "query": "path:\"Quantum Communication\"",
+      "color": {
+        "a": 1,
+        "rgb": 1493172
+      }
+    },
+    {
+      "query": "path:\"Depth & Optimization\"",
+      "color": {
+        "a": 1,
+        "rgb": 14721849
+      }
+    },
+    {
+      "query": "path:\"Hardware Reality\"",
+      "color": {
+        "a": 1,
+        "rgb": 6065632
+      }
+    },
+    {
+      "query": "path:\"Noise & Error Models\"",
+      "color": {
+        "a": 1,
+        "rgb": 14707820
+      }
+    },
+    {
+      "query": "path:\"Dynamic Circuits\"",
+      "color": {
+        "a": 1,
+        "rgb": 7324298
+      }
+    },
+    {
+      "query": "path:\"Error Mitigation\"",
+      "color": {
+        "a": 1,
+        "rgb": 12945674
+      }
+    },
+    {
+      "query": "path:\"Quantum Algorithms\"",
+      "color": {
+        "a": 1,
+        "rgb": 2201331
+      }
+    },
+    {
+      "query": "path:\"Quantum Machine Learning\"",
+      "color": {
+        "a": 1,
+        "rgb": 16733013
+      }
+    },
+    {
+      "query": "path:\"Quantum Advantage\"",
+      "color": {
+        "a": 1,
+        "rgb": 15771074
+      }
+    },
+    {
+      "query": "path:\"Quantum + HPC\"",
+      "color": {
+        "a": 1,
+        "rgb": 4492715
+      }
+    },
+    {
+      "query": "path:\"Reading the Literature\"",
+      "color": {
+        "a": 1,
+        "rgb": 4886489
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": false,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": true,
+  "centerStrength": 0.518713248970312,
+  "repelStrength": 10,
+  "linkStrength": 1,
+  "linkDistance": 250,
+  "scale": 1,
+  "close": false
+}
