@@ -1,0 +1,16 @@
+.DS_Store
+node_modules
+public
+prof
+tsconfig.tsbuildinfo
+.obsidian/*
+!.obsidian/graph.json
+!.obsidian/core-plugins.json
+.quartz-cache
+private/
+.replit
+replit.nix
+.quartz/
+quartz/cli/tui/dist/
+
+.superpowers/
